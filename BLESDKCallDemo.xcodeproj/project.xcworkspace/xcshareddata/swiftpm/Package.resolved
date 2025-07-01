@@ -1,0 +1,24 @@
+{
+  "originHash" : "428db3d7bfdb2edcf5a71b8e64d82c77e83358abde56eef16f9ca71b530536de",
+  "pins" : [
+    {
+      "identity" : "spectrableaccessios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SpectraTech7/SpectraBLEAccessiOS",
+      "state" : {
+        "branch" : "main",
+        "revision" : "a7c4b39cdbc57d2691715689be05a69b0aa19e3c"
+      }
+    },
+    {
+      "identity" : "toast-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scalessec/Toast-Swift",
+      "state" : {
+        "revision" : "ddccd20d6fb718448d9b179c454c561653fda7d5",
+        "version" : "5.1.1"
+      }
+    }
+  ],
+  "version" : 3
+}
