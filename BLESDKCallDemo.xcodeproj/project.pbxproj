@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		882946F02E13D6F300F32AF4 /* SpectraBLEiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 882946EF2E13D6F300F32AF4 /* SpectraBLEiOS */; };
 		885732752DDF51630029CB16 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 885732742DDF51630029CB16 /* Toast */; };
+		88972A8B2E9934C60072EF71 /* SpectraBLEiOS in Frameworks */ = {isa = PBXBuildFile; productRef = 88972A8A2E9934C60072EF71 /* SpectraBLEiOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				885732752DDF51630029CB16 /* Toast in Frameworks */,
-				882946F02E13D6F300F32AF4 /* SpectraBLEiOS in Frameworks */,
+				88972A8B2E9934C60072EF71 /* SpectraBLEiOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,7 +133,7 @@
 			name = BLESDKCallDemo;
 			packageProductDependencies = (
 				885732742DDF51630029CB16 /* Toast */,
-				882946EF2E13D6F300F32AF4 /* SpectraBLEiOS */,
+				88972A8A2E9934C60072EF71 /* SpectraBLEiOS */,
 			);
 			productName = BLESDKCallDemo;
 			productReference = 888CF9652D8AD4CD006E9F14 /* BLESDKCallDemo.app */;
@@ -220,7 +220,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				885732732DDF51630029CB16 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				882946EE2E13D6F300F32AF4 /* XCRemoteSwiftPackageReference "SpectraBLEAccessiOS" */,
+				88972A892E9934C60072EF71 /* XCRemoteSwiftPackageReference "SpectraBLEAccessiOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 888CF9662D8AD4CD006E9F14 /* Products */;
@@ -307,6 +307,10 @@
 				DEVELOPMENT_TEAM = 44922LKETM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BLESDKCallDemo/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app requires Bluetooth access to connect to nearby BLE devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app needs Bluetooth to communicate with BLE peripherals.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need access to your location even when you're not using the app to allow access to our BLE device to mark your punch.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location even when you're not using the app to allow access to our BLE device to mark your punch.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -339,6 +343,10 @@
 				DEVELOPMENT_TEAM = 44922LKETM;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = BLESDKCallDemo/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app requires Bluetooth access to connect to nearby BLE devices.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app needs Bluetooth to communicate with BLE peripherals.";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "We need access to your location even when you're not using the app to allow access to our BLE device to mark your punch.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need access to your location even when you're not using the app to allow access to our BLE device to mark your punch.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -592,14 +600,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		882946EE2E13D6F300F32AF4 /* XCRemoteSwiftPackageReference "SpectraBLEAccessiOS" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SpectraTech7/SpectraBLEAccessiOS";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
 		885732732DDF51630029CB16 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/scalessec/Toast-Swift";
@@ -608,18 +608,26 @@
 				minimumVersion = 5.1.1;
 			};
 		};
+		88972A892E9934C60072EF71 /* XCRemoteSwiftPackageReference "SpectraBLEAccessiOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SpectraTech7/SpectraBLEAccessiOS";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		882946EF2E13D6F300F32AF4 /* SpectraBLEiOS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 882946EE2E13D6F300F32AF4 /* XCRemoteSwiftPackageReference "SpectraBLEAccessiOS" */;
-			productName = SpectraBLEiOS;
-		};
 		885732742DDF51630029CB16 /* Toast */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 885732732DDF51630029CB16 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
+		};
+		88972A8A2E9934C60072EF71 /* SpectraBLEiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 88972A892E9934C60072EF71 /* XCRemoteSwiftPackageReference "SpectraBLEAccessiOS" */;
+			productName = SpectraBLEiOS;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
