@@ -45,7 +45,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         
         let startTime = Date().timeIntervalSince1970
         UserDefaults.standard.set(startTime, forKey: "BLEStartTime")
-
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10) {
+            SpectraBLE.shared.stopScan()
+        }
 
     }
     
@@ -69,7 +72,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 //        """
 //        
         
-        SpectraBLE.shared.initialize(encryptionKey:  "5A423953363147365A475052474A315A", bleTag: "2141085659", punchRange: 2)
+        SpectraBLE.shared.initialize(encryptionKey:  "5844424A343639474542343939494230", bleTag: "1726397546", punchRange: 2)
         
         //SpectraBLE.shared.initialize(encryptionKey:  "123456", bleTag: "2141085659", punchRange: 2, additionalInfo: additionalInfo)
         { (event, data) in

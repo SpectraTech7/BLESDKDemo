@@ -1,5 +1,5 @@
 {
-  "originHash" : "428db3d7bfdb2edcf5a71b8e64d82c77e83358abde56eef16f9ca71b530536de",
+  "originHash" : "41aa2b8d817976f0e53c1f344382af78904e7c3adba0713f42375d8527357ebb",
   "pins" : [
     {
       "identity" : "spectrableaccessios",
@@ -7,7 +7,7 @@
       "location" : "https://github.com/SpectraTech7/SpectraBLEAccessiOS",
       "state" : {
         "branch" : "main",
-        "revision" : "d1659f382d8a35e456cca3fb08821be59714624d"
+        "revision" : "1c788d030cb20d872a29e57a895fe80406b8ec51"
       }
     },
     {
